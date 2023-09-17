@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card({card}) {
+function CardAuto({card}) {
     /* retreive card object and dsetructure to name and image */
     let cardImg = card['image'];
     let cardName = card['name'];
@@ -11,4 +11,4 @@ return <div className="Card">
 </div>
 }
 
-export default Card
+export default CardAuto

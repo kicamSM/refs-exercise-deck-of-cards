@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Card from "./Card"
 import './Deck.css'
@@ -8,7 +8,6 @@ function Deck() {
     const API_URL = "https://deckofcardsapi.com/api/deck/"
     const [deck, setDeck] = useState(null);
     const [card, setCard] = useState('https://deckofcardsapi.com/static/img/back.png');
-    const [cardValue, setCardValue] = useState(null)
     const [remaining, setRemaining] = useState(true)
     // let destructuredCard = {}
 
@@ -49,7 +48,7 @@ const drawCard = async () => {
 
 }
 
-
+/* return divs with button and card */
   return (
         <div className="Deck">
             <div className="Deck-btn-cont">
